@@ -1,5 +1,7 @@
 const admin = require('firebase-admin')
 
+
+
 const serviceAccount = {
   'type': 'service_account',
   'project_id': 'social-media-app-5af76',
@@ -19,5 +21,7 @@ admin.initializeApp({
 })
 
 const db = admin.firestore()
+
+
 
 module.exports = { admin, db }
